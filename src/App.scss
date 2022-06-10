@@ -1,0 +1,71 @@
+// variables
+$mobile: 768px;
+$headerFont: "Days One", sans-serif;
+$bodyFont: "Open Sans", sans-serif;
+
+:root {
+  --link-color: #107c10; //xbox green
+  --link-hover: #ff5092;
+
+  --slategray: #3a3a3a;
+
+  --background: #fcfefc;
+}
+
+// shared
+.App {
+  overflow: hidden;
+  position: relative;
+  background: var(--background);
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+// fonts & typography
+body,
+input,
+textarea {
+  font-family: $bodyFont;
+  color: var(--slategray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headerFont;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+}
+
+p,
+li {
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+li p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--link-color);
+  &:hover {
+    color: var(--link-hover);
+  }
+}
